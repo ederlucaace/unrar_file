@@ -38,7 +38,8 @@ android {
     namespace "com.syed.unrar_file"
     dependencies{
         implementation "com.github.junrar:junrar:7.5.0"
-
+        implementation 'org.slf4j:slf4j-api:1.7.36'
+        implementation 'org.slf4j:slf4j-simple:1.7.30'
     }
 }
 
