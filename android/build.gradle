@@ -22,8 +22,8 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdk = 34
-
+    compileSdk = 36
+    namespace "com.syed.unrar_file"
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -31,11 +31,11 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        targetSdkVersion 36
     }
     lintOptions {
         disable 'InvalidPackage'
     }
-    namespace "com.syed.unrar_file"
     dependencies{
         implementation "com.github.junrar:junrar:7.5.0"
         implementation 'org.slf4j:slf4j-api:1.7.36'
